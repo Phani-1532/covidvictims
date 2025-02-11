@@ -110,6 +110,9 @@ td:hover {
   /* Hide scrollbar for Firefox */
 }
 
+.table-wrapper::-webkit-scrollbar {
+  display: none;
+}
 
 /* Loading Text Styling */
 .loading-text {
@@ -157,7 +160,6 @@ td:hover {
   }
 
   /* Hide less important columns on small screens */
-
 }
 
 @media (max-width: 576px) {
@@ -198,13 +200,7 @@ td:hover {
   }
 
   /* Add column visibility rules */
-  .table th:nth-child(1),
-  .table td:nth-child(1) {
-    position: sticky;
-    left: 0;
-    background: rgba(255, 255, 255, 0.9);
-    z-index: 1;
-  }
+ 
 
   .table-wrapper {
     margin-left: 0;
